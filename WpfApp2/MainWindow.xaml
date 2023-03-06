@@ -69,7 +69,7 @@
                 <Label Content="MARATHON SKILLS 2016" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontSize="24" FontWeight="Bold" Margin="150,0,0,0"/>
             </Grid>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" Margin="0,75,0,0">
+        <Border BorderBrush="Black" BorderThickness="1" Margin="0,74,0,0">
             <Grid Margin="0,0,0,-32">
                 <Label Content="Просмотр спонсоров" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="DimGray" FontSize="24" Margin="0,17,0,0"/>
                 <Label Content="Отсортировать:" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#FF3A3A3A" FontSize="16" Margin="0,80,300, 0"/>
@@ -77,9 +77,9 @@
                     <TextBlock>Итоговая сумма</TextBlock>
                 </ComboBox>
                 <Button Style="{DynamicResource ButtonStyle1}" Content="Сортировка" VerticalAlignment="Top" Margin="350,80,20,0" Width="150" Height="30" FontSize="18" />
-                <Label Content="Благотворительные организации:   10" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="DimGray" FontSize="20" Margin="0,120,0,0"/>
+                <Label Content="Благотворительные организации:   10" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="DimGray" FontSize="15" Margin="0,120,5,5"/>
                 <Label Content="Всего спонсорских взносов:  $94,450" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="DimGray" FontSize="20" Margin="0,150,0,0"/>
-                <DataGrid x:Name="SponsorGrid" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" FontWeight="Bold" Margin="123,192,115,87" Foreground="#FF616161" Background="#FFA0A0A0" >
+                <DataGrid x:Name="SponsorGrid" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" FontWeight="Bold" Margin="123,192,115,87" Foreground="AliceBlue" Background="#FFA0A0A0" >
                     <DataGrid.Columns>
                         <DataGridTextColumn Binding="{Binding Path=Logo}" Width="150" Header="Логотип" Foreground="Black"></DataGridTextColumn>
                         <DataGridTextColumn Binding="{Binding Path=Title}"  Width="300" Header="Наименование"></DataGridTextColumn>
@@ -100,9 +100,9 @@
                     </DataGrid.Resources>
                     <DataGrid.Items>
                         <local:Sponsor Logo="fdfdf" Title="fdfd" Sum="5535"/>
-                        <local:Sponsor Logo="fdfdf" Title="fdfd" Sum="5535"/>
-                        <local:Sponsor Logo="fdfdf" Title="fdfd" Sum="5535"/>
-                        <local:Sponsor Logo="fdfdf" Title="fdfd" Sum="5535"/>
+                        <local:Sponsor Logo="fdfdf" Title="fdfd" Sum="5635"/>
+                        <local:Sponsor Logo="fdfdf" Title="fdfd" Sum="5735"/>
+                        <local:Sponsor Logo="fdfdf" Title="fdfd" Sum="5555"/>
                     </DataGrid.Items>
                 </DataGrid>
             </Grid>
